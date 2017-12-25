@@ -52,7 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  jekyll (= 3.6.2)
+  jekyll
   jekyll-feed
   jekyll-sitemap
 
