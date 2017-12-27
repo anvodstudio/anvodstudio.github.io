@@ -11,7 +11,7 @@
 title: Anvod Studio
 description: Anvod Studio - A New View Of Design
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anvodstudio.com" # the base hostname & protocol for your site, e.g. http://example.com
 email: anvodstudio@gmail.com
 disqus: anvodstudio
 twitter: https://twitter.com/anvodstudio
