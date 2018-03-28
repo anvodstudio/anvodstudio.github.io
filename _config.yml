@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Wordpress | MODX - Jekyll Themes Development - Anvod Studio
+title: Wordpress | MODX | Jekyll Themes Development - Anvod Studio
 description: Anvod Studio - A New View Of Design
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
