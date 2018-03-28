@@ -1,0 +1,123 @@
+.c-site-header {
+  position: relative;
+  height: 80px;
+  padding: 0 20px;
+  background-color: $color-white;
+
+  .c-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    &__image {
+      max-width: 100%;
+      width: 80px;
+      height: auto;
+    }
+  }
+}
+
+.c-site-nav {
+  position: relative;
+  height: 80px;
+
+  .c-menu-list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    .c-menu-item {
+      display: inline-block;
+      padding: 0 10px;
+
+      .c-menu-item__link {
+        font-size: 16px;
+        color: $color-dark;
+        text-decoration: none;
+        transition: all $global-transition;
+
+        &.c-menu-item__link--active {
+          color: $color-brand;
+        }
+
+        &:hover {
+          color: $color-link-hover;
+          transition: all $global-transition;
+        }
+      }
+    }
+  }
+
+  .c-social {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .c-site-nav__icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: $color-dark;
+    line-height: 0;
+    vertical-align: middle;
+    cursor: pointer;
+
+    .icon {
+      fill: $color-dark;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+
+    .c-social {
+      right: 30px;
+    }
+
+    .c-site-nav__icon {
+      display: block;
+    }
+
+    .c-menu-list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 250px;
+      background-color: $color-white;
+      border: 1px solid $color-border;
+      transform: translate3d(250px, 0, 0);
+      z-index: 10;
+
+      &.open {
+        right: 0;
+      }
+
+      .c-menu-item {
+        padding: 0;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid $color-border;
+
+        .c-menu-item__link {
+          display: inline-block;
+          width: 100%;
+          padding: 30px 0;
+          transition: all $global-transition;
+
+          &:hover {
+            background-color: rgba(153, 178, 199, 0.04);
+            transition: all $global-transition;
+          }
+        }
+      }
+    }
+  }
+}

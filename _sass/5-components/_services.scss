@@ -1,0 +1,26 @@
+.c-services {
+  padding: 50px 0;
+  border-bottom: 1px solid $color-border;
+  .c-services__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .c-services__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 40px;
+   margin-bottom: 30px;
+   text-align: center;
+   border-radius: 10px;
+   transition: all .35s;
+   box-shadow: 5px 5px 25px rgba(46,61,73,0.15);
+   &:hover {
+     box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+   }
+   .c-services__img {
+     margin-bottom: 20px;
+   }
+  }
+}

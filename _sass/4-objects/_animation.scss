@@ -1,0 +1,51 @@
+.o-opacity {
+  animation: opacity .8s ease 0s 1 normal both;
+}
+
+@-webkit-keyframes opacity {
+    0% {
+      opacity: 0;
+      visibility: hidden
+    }
+
+    100%,70% {
+      opacity: 1;
+      visibility: visible
+    }
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+      visibility: hidden
+    }
+
+    100%,70% {
+      opacity: 1;
+      visibility: visible
+    }
+}
+
+.o-scale-heart {
+  animation: heart .7s ease 0s infinite both;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}

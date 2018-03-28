@@ -1,46 +1,47 @@
 // SETTINGS
-@import 'settings/global';
-@import 'settings/colors';
+@import '0-settings/global';
+@import '0-settings/colors';
 
 // TOOLS
-@import 'tools/mixins';
-@import 'tools/mq';
+@import '1-tools/mixins';
+@import '1-tools/mq';
 
 
 // GENERIC
-@import 'generic/normalize';
-@import 'generic/reset';
-@import 'generic/evil-icons';
-@import 'generic/syntax-highlighting';
-@import 'generic/box-sizing';
-@import 'generic/shared';
+@import '2-generic/normalize';
+@import '2-generic/reset';
+@import '2-generic/evil-icons';
+@import '2-generic/syntax-highlighting';
+@import '2-generic/box-sizing';
+@import '2-generic/shared';
 
 // ELEMENTS
-@import 'elements/page';
-@import 'elements/headings';
-@import 'elements/images';
-@import 'elements/links';
-@import 'elements/lists';
+@import '3-elements/page';
+@import '3-elements/headings';
+@import '3-elements/images';
+@import '3-elements/links';
+@import '3-elements/lists';
 
 // OBJECTS
-@import 'objects/wrappers';
-@import 'objects/layout';
+@import '4-objects/wrappers';
+@import '4-objects/layout';
+@import '4-objects/animation';
 
 // COMPONENTS
-@import 'components/full-page-container';
-@import 'components/preloader';
-@import 'components/overlay';
-@import 'components/header';
-@import 'components/social';
-@import 'components/section-desc';
-@import 'components/hero';
-@import 'components/buttons';
+@import '5-components/full-page-container';
+@import '5-components/preloader';
+@import '5-components/overlay';
+@import '5-components/header';
+@import '5-components/social';
+@import '5-components/hero';
+@import '5-components/services';
+@import '5-components/works';
+@import '5-components/contacts';
+@import '5-components/footer';
+@import '5-components/buttons';
 
 // TRUMPS
-@import 'trumps/clearfix';
-@import 'trumps/screen-reader-text';
-@import 'trumps/lists-reset';
-
-
-
-// @import 'hero';
+@import '6-trumps/clearfix';
+@import '6-trumps/screen-reader-text';
+@import '6-trumps/lists-reset';
+@import '6-trumps/section-heading';

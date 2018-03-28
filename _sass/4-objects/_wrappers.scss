@@ -1,0 +1,21 @@
+$base-wrapper-width: 1600px; // 1280px
+
+.o-wrapper {
+  width: $base-wrapper-width;
+  max-width: 90%;
+  flex: 1 0 auto;
+  margin: -50px auto 50px;
+  padding-left: $base-spacing-unit;
+  padding-right: $base-spacing-unit;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 10px rgba(74, 79, 104, 0.1);
+  background: $color-white;
+}
+
+.o-wrapper-content {
+  width: $base-wrapper-width;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: $base-spacing-unit; // 15px
+  padding-right: $base-spacing-unit; // 15px
+}

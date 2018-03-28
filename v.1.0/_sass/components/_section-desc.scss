@@ -1,0 +1,28 @@
+.c-section-desc {
+  padding: (4 * $base-spacing-unit) 0;
+  text-align: center;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-white;
+
+  &__main {
+    color: $color-blue-gray;
+  }
+
+  &__sub {
+    position: relative;
+    margin: 5px 0 0;
+    padding-bottom: 10px;
+
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   width: 70px;
+    //   height: 2px;
+    //   left: 50%;
+    //   bottom: 0;
+    //   transform: translateX(-50%);
+    //   background-color: $color-brand;
+    // }
+  }
+}

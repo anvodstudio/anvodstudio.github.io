@@ -5,13 +5,13 @@
 
   <body>
     <div class="c-full-page-container">
-      {% include header.html %}
-
       <div class="c-preloader" id="page-preloader">
         <div class="c-preloader__loader"></div>
       </div> <!-- /.c-preloader -->
 
       <div class="c-overlay" id="mask"></div> <!-- /.c-overlay -->
+
+       {% include header.html %}
 
         {{ content }}
 
