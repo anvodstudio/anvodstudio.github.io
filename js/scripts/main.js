@@ -32,16 +32,6 @@ $(function() {
       }
   });
 
-  // Page Scroll
-  // $('#about').on('click', function(e) {
-  //   e.preventDefault();
-  //   var servicesOffset = $('#js-services').offset().top;
-
-  //   $('html, body').animate({
-  //     scrollTop: servicesOffset
-  //   }, 500);
-  // });
-
   // Fixed header when scroll
   var heroHeight = $('#js-hero').innerHeight(),
     headerHeight = $('#js-header').innerHeight();
@@ -80,6 +70,16 @@ $(function() {
       scrollTop: currentBlockOffset - headerHeight
     }, 500);
 
+  });
+
+  // Scroll to contacts form
+  $('.c-hero__desc .c-btn').on('click', function (e) {
+    e.preventDefault();
+    var servicesOffset = $('#js-contacts').offset().top - headerHeight;
+
+    $('html, body').animate({
+      scrollTop: servicesOffset
+    }, 500);
   });
 
   // Freshchat
