@@ -79,6 +79,16 @@ $(function() {
     }, 500);
   });
 
+  // Netlify form with ajax
+  $(".c-contacts-form").submit(function (e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function () {
+      alert("Thank you!");
+    });
+  });
+
   // Freshchat
   window.fcWidget.init({
     token: "32afc133-968c-43dd-98d7-a612e412d004",
