@@ -86,7 +86,7 @@ $(function() {
     var $form = $(this);
     $.post($form.attr("action"), $form.serialize()).then(function () {
       $('.c-contacts-form :input').val('');
-      $('.c-contacts-desc').text('<p style="color: #5ec9c5;">Thanks for filling out our contact form. We try to get back to as you soon as possible.</p>');
+      $('.c-contacts-desc').text('Thanks for filling out our contact form. We try to get back to as you soon as possible.').css('color', '#5ec9c5');
     });
   });
 
