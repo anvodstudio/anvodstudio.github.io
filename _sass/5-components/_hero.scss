@@ -1,7 +1,7 @@
 .c-hero {
   color: $color-white;
   height: auto;
-  background: $bg-lilac; // linear-gradient(45deg, #4a5068 0%,#6fa0d1 100%);
+  background: $bg-lilac url('images/assets/bg-pattern.png') repeat; // linear-gradient(45deg, #4a5068 0%,#6fa0d1 100%);
 
   &__content {
     padding: 100px 0 150px;
