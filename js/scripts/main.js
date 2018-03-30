@@ -80,11 +80,11 @@ $(function() {
   });
 
   // Netlify contact form
-  $(".c-contacts-form").submit(function (e) {
+  $('.c-contacts-form').submit(function (e) {
     e.preventDefault();
 
     var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function () {
+    $.post($form.attr('action'), $form.serialize()).then(function () {
       $('.c-contacts-form :input').val('');
       $('.c-contacts-desc').text('Thanks for filling out our contact form. We try to get back to as you soon as possible.').css('color', '#5ec9c5');
     });
@@ -94,6 +94,28 @@ $(function() {
   window.fcWidget.init({
     token: "32afc133-968c-43dd-98d7-a612e412d004",
     host: "https://wchat.freshchat.com"
+  });
+
+  // Load works
+  $(function () {
+    $('.works-portfolio__item').slice(0, 2).show();
+    $('.c-see-more').on('click', function (e) {
+      e.preventDefault();
+
+      let worksHeight = $('.works-portfolio__item').innerHeight();
+
+      $('.works-portfolio__item:hidden').slice(0, 2).slideDown();
+
+      if ($('.works-portfolio__item:hidden').length == 0) {
+        $('.c-see-more').addClass('c-see-more--disabled');
+        $('.c-see-more').off('click'); // Disable click event
+      }
+
+      $('html,body').animate({
+        scrollTop: $(this).offset().top - (worksHeight + headerHeight * 2)
+      }, 1000);
+    });
+
   });
 
 });
