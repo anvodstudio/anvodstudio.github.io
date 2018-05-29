@@ -90,12 +90,6 @@ $(function() {
     });
   });
 
-  // Freshchat
-  window.fcWidget.init({
-    token: "32afc133-968c-43dd-98d7-a612e412d004",
-    host: "https://wchat.freshchat.com"
-  });
-
   // Load works
   $(function () {
     $('.works-portfolio__item').slice(0, 2).show();
