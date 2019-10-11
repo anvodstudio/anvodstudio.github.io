@@ -1,47 +1,45 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Ghost CMS | Jekyll Themes Development – Anvod Studio.
+logo:
+description: Anvod Studio creates modern, minimal Ghost & Jekyll themes focused on the content, speed and simplicity.
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-title: Wordpress | MODX | Jekyll Themes Development - Anvod Studio
-description: Anvod Studio - A New View Of Design
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-email: anvodstudio@gmail.com
-disqus: anvodstudio
-twitter: https://twitter.com/anvodstudio
-instagram: https://www.instagram.com/anvodstudio/
-pinterest:
-github: https://github.com/anvodstudio
-themeforest:
+# Author Settings
+author: Anvod Studio
 
-# Hero
+# Hero Settings
 hero-title: Welcome to Anvod Studio
-hero-tagline: We create premium custom websites for creative people and companies that appreciate quality and simplicity.
+hero-subtitle: We create premium Ghost & Jekyll themes for creative people that appreciate quality and simplicity.
+
+# Contact links
+twitter: https://twitter.com/anvodstudio
+github: https://github.com/anvodstudio
+email: anvodstudio@gmail.com
+
+# Google Analytics
+google-analytics: # Add your identifier.
+
+# Collestions
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+  
+  ghost-themes:
+    output: false
+
+  jekyll-themes:
+    output: false
 
 # Build settings
 markdown: kramdown
-paginate_path: "/page/:num"
-
-include:
-  - _pages
-
 permalink: pretty
 plugins:
   - jekyll-sitemap
-  - jekyll-feed
 
 sass:
   sass_dir: _sass
   style: compressed
 
-#Exclude from processing.
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor
+  - sass

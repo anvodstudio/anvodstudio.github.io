@@ -1,19 +1,38 @@
-<header class="c-site-header" id="js-header">
-  <div class="o-wrapper-content">
-    <nav class="c-site-nav" id="js-nav">
-      <a class="c-logo" href="{{ "/" | relative_url }}"><img class="c-logo__image" src="{{site.baseurl}}/images/assets/anvod-logo.svg" alt="Anvod Studio Logo"> <span class="u-screen-reader-text">{{ site.title | escape }}</span></a>
-      {% include social-links.html %}
-      <div class="c-site-nav__icon">
-        <div data-icon='ei-navicon' data-size='s'></div>
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__content">
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+          <ul class="main-nav__list list-reset">
+            <li class="main-nav__item">
+              <a href="{{site.url}}" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="{{site.url}}#ghost-themes" class="main-nav__link">Ghost Themes</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="{{site.url}}#jekyll-themes" class="main-nav__link">Jekyll Themes</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="{{site.url}}#contact" class="main-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
-    </nav>
-    <ul class="c-menu-list">
-      {% for link in site.data.navigation %} {% assign class = nil %} {% if page.url contains link.link %} {% assign class = '
-      c-menu-item__link--active' %} {% endif %}
-      <li class='c-menu-item'>
-        <a class='c-menu-item__link {{ class }}' href='#{{ link.link }}'>{{ link.name }}</a>
-      </li>
-      {% endfor %}
-    </ul>
+
+      <!-- Menu Icon -->
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu-overlay"></div>
+    </div>
   </div>
-</header> <!-- /.site-header -->
+</header>
+<!-- end header -->

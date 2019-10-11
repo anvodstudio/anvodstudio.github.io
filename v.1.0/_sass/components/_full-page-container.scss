@@ -1,6 +1,0 @@
-.c-full-page-container {
-  transition: all $global-transition ease;
-  &.open {
-    transform: translate3d(-250px, 0, 0);
-  }
-}

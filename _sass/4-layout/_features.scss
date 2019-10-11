@@ -1,0 +1,31 @@
+/* Features */
+.features {
+  .col {
+    display: flex;
+  }
+}
+
+.features__item {
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 25px rgba(46,61,73,0.15);
+  @media only screen and (max-width: $mobile) {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.features__img {
+  width: 60px;
+  height: 60px;
+}
+
+.features__title {
+  margin: 10px 0;
+}
+
+.features__desc {
+  color: $gray;
+  margin: 0;
+}

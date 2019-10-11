@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ============================================================ -->
+<!-- =                                                          = -->
+<!-- =    Anvod Studio - https://anvodstudio.com      = -->
+<!-- =                                                          = -->
+<!-- ============================================================ -->
+{% include head.html %}
+<body>
 
-  {% include head.html %}
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 
-  <body>
-    <div class="c-full-page-container">
-      <div class="c-preloader" id="page-preloader">
-        <div class="c-preloader__loader"></div>
-      </div> <!-- /.c-preloader -->
+  {% include header.html %}
 
-      <div class="c-overlay" id="mask"></div> <!-- /.c-overlay -->
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    {{ content }}
+  </main>
+  <!-- end content -->
 
-       {% include header.html %}
-
-        {{ content }}
-
-      {% include footer.html %}
-    </div> <!-- /.c-full-page-container -->
-    <script src="{{ "/js/common.js" }}"></script>
-  </body>
+  {% include footer.html %}
+  <!-- begin javascript files -->
+  <script src="{{ site.baseurl }}/js/vendors/jquery-3.4.0.min.js"></script>
+  <script src="{{ site.baseurl }}/js/vendors/jquery.viewportchecker.min.js"></script>
+  <script src="{{ site.baseurl }}/js/common.js"></script>
+  <!-- end javascript files -->
+</body>
 
 </html>

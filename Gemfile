@@ -1,6 +1,4 @@
-source "https://rubygems.org"
-
-gem "jekyll"
+source 'https://rubygems.org'
 gem "bundler"
-gem 'jekyll-sitemap'
-gem "jekyll-feed", group: :jekyll_plugins
+gem "jekyll"
+gem "jekyll-sitemap"

@@ -1,14 +1,21 @@
-<section class="c-hero" id="js-hero">
-  <div class="o-wrapper-content">
-    <div class="c-hero__content o-row">
-      <div class="c-hero__desc o-row__col o-row__col--5 o-row__col--10-lg o-row__col--12-md">
-        <h1 class="c-hero__title">{% if site.hero-title %}{{site.hero-title}}{% else %}Welcome to Anvod Studio{% endif %}</h1>
-        <p class="c-hero__tagline">{% if site.hero-tagline %}{{site.hero-tagline}}{% else %}We create premium custom websites for creative people and companies that appreciate quality and simplicity.{% endif %}</p>
-        <a class="c-btn c-btn--bilberry" href="#">Contact us</a>
-      </div>
-      <div class="c-hero__banner o-row__col o-row__col--6 o-row__col--10-lg o-row__col--12-md">
-        <img src="{{site.baseurl}}/images/assets/banner.svg" alt="Banner">
+<!-- begin hero -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__text">
+          <h1 class="hero__title">{{site.hero-title}}</h1>
+          <p class="hero__subtitle">{{site.hero-subtitle}}</p>
+          <a href="#" class="discover-btn">Discover</a>
+        </div>
+        <div class="hero__banner">
+          <a href="#">
+            <img src="/img/banner.png" alt="Banner Image" class="banner">
+          </a>
+        </div>
+        <div class="separator"></div>
       </div>
     </div>
   </div>
-</section> <!-- /.hero -->
+</section>
+<!-- end hero
