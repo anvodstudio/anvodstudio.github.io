@@ -1,18 +1,22 @@
 /* Features */
 .features {
+  padding: 80px 0;
+  background-color: #f7f7f7;
   .col {
     display: flex;
   }
 }
 
 .features__item {
-  padding: 40px;
+  padding: 50px;
   margin-bottom: 30px;
-  border-radius: 3px;
-  box-shadow: 5px 5px 25px rgba(46,61,73,0.15);
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px rgba(51, 84, 78, 0.15);
+  background-color: #fff;
   @media only screen and (max-width: $mobile) {
-    padding: 25px;
+    padding: 40px;
     margin-bottom: 20px;
+    font-size: 14px;
   }
 }
 
@@ -23,6 +27,8 @@
 
 .features__title {
   margin: 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .features__desc {

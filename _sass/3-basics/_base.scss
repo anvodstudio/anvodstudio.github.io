@@ -11,7 +11,7 @@ html {
 
 
 body {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.65;
@@ -30,10 +30,11 @@ img {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-size: 27px;
+  font-size: 30px;
   text-align: center;
   @media only screen and (max-width: $mobile) {
-    font-size: 24px;
+    margin-bottom: 30px;
+    font-size: 27px;
   }
 }
 

@@ -1,11 +1,9 @@
 $(function() {
   'use strict';
 
-  var header = $('.header'),
-      headerHeight = $(header).innerHeight(),
-      headerContent = $('.header__content'),
-      menuIcon = $('.menu-icon'),
-      menuOverlay = $('.menu-overlay');
+var  headerContent = $('.header__content'),
+     menuIcon = $('.menu-icon'),
+     menuOverlay = $('.menu-overlay');
 
 
   /* =======================

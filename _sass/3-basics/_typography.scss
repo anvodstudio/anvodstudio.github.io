@@ -5,9 +5,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', Helvetica Neue, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: 'Open Sans', Helvetica Neue, Arial, sans-serif;
+  font-weight: 600;
   color: $black;
 }
 
@@ -35,40 +34,12 @@ h6 {
   font-size: 16px;
 }
 
-small {
-  font-size: 10px;
-  line-height: 1.2;
-}
-
 // Basic Text Style
 
 p {
   margin: 0 0 20px 0;
   font-weight: 400;
   font-size: 16px;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-blockquote {
-  padding-left: $base-spacing-unit;
-  font-size: 18px;
-  font-style: normal;
-}
-
-pre {
-  overflow: auto;
-  padding: 15px;
-  font-size: 14px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 
 hr {

@@ -10,6 +10,7 @@ author: Anvod Studio
 # Hero Settings
 hero-title: Welcome to Anvod Studio
 hero-subtitle: We create premium Ghost & Jekyll themes for creative people that appreciate quality and simplicity.
+hero-img: /img/hero_bg.jpg
 
 # Contact links
 twitter: https://twitter.com/anvodstudio
