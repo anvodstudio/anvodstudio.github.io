@@ -1,20 +1,33 @@
 ---
 layout: default
 ---
+<!-- begin page -->
+
 <div class="container">
-	<div class="row">
-		<div class="col col-12">
-			<h1 class="page-title">{{ page.title | escape }}</h1>
-			<!-- begin page -->
-			<article class="page">
-				{% if page.image %}
-					<img src="{{site.baseurl}}/img/{{page.image}}" alt="{{ page.title }}">
-				{% endif %}
-				<div class="page__content">
-					{{ content }}
-				</div>
-			</article>
-			<!-- end page -->
-		</div>
-	</div>
+  <div class="row">
+    <div class="col col-12">
+      <div class="page-head">
+        <h1 class="page-title">{{ page.title | escape }}</h1>
+        {% if page.description %}
+        <p class="page-description">{{page.description}}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <article class="page">
+        {% if page.image %}
+          <img src="{{site.baseurl}}/img/{{page.image}}" alt="{{ page.title }}">
+        {% endif %}
+        <div class="page__content">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+<!-- end page -->

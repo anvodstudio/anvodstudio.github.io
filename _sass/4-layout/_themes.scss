@@ -1,28 +1,36 @@
 /* Themes */
-.themes {
- padding: 80px 0;
- @media only screen and (max-width: $mobile) {
-   padding: 50px 0;
- }
+.theme {
+  margin-bottom: 25px;
 }
 
-.theme {
-  margin-bottom: 50px;
+
+.work__box {
+  padding-bottom: 55px;
+  margin-bottom: 80px;
+  border-bottom: 1px solid $light-gray;
 }
 
 .theme-image {
+  width: 100%;
+  min-height: 300px;
   display: block;
-  background-position: center;
+  border-radius: 5px;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  &:hover {
-    transform: translate(0px, -10px);
-  }
-
-  &:after {
+  background-color: $light-gray;
+  box-shadow: 0px 5px 20px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out, opacity 400ms ease-in-out;
+  &::after {
     content: "";
     display: table;
-    padding-top: 60%;
+    padding-top: 70%;
+  }
+
+  &:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   }
 }
 
@@ -31,64 +39,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .product-head__title {
   margin: 0;
-  font-size: 27px;
-  line-height: 48px;
+  font-size: 21px;
+  line-height: 31px;
 }
 
 .product-head__subtitle {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   font-size: 12px;
   text-transform: uppercase;
   color: #828282;
-}
-
-// Button Box
-.btn-box {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 25px;
-  margin-right: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  border: none;
-  color: #fff;
-  transition: all 250ms ease;
-  color: $black;
-  border: 1px solid #dbdada;
-  background-color: #fff;
-  cursor: pointer;
-  &:last-child {
-    margin-right: 0;
-  }
-  &:hover,
-  &:active,
-  &:focus {
-    color: $black;
-  }
-  &:hover {
-    border-color: #9a9a9a;
-    background-color: #f6f6f6;
-  }
-  svg {
-    margin-right: 10px;
-  }
-  @media only screen and (max-width: $mobile) {
-    padding: 12px 10px;
-  }
 }

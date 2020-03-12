@@ -1,0 +1,49 @@
+---
+layout: default
+title: Contact
+description: If you have any questions, please use the following form below and I've will get back to you as quickly as possible.
+permalink: /contact/
+---
+<div class="container">
+  <div class="row">
+    <div class="col col-12 col-t-10 push-t-1 col-m-12 push-m-0">
+      <div class="form-box">
+        <div class="contact-head">
+          <h1 class="page-title">{{ page.title | escape }}</h1>
+          {% if page.description %}
+          <p class="page-description">{{page.description}}</p>
+          {% endif %}
+        </div>
+        <form class="form" id="ajaxForm" action="https://getform.io/f/eca608f3-0ba6-48c6-969d-ae02706cb7d6" method="POST">
+          <div class="form__group">
+            <label class="form__label" for="form-name">Your Name <span>(required)</span></label>
+            <input class="form__input" id="form-name" type="text" name="name" id=”name” placeholder="Name..." required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="form-email">Your Email <span>(required)</span></label>
+            <input class="form__input" id="form-email" type="email" name="email" id=”email” placeholder="Email..." required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="form-select">How can we help you? <span>(required)</span></label>
+            <select class="form-select" id="form-select" name="platform" required="required">
+              <option>---</option>
+              <option>Pre-Sale Question</option>
+              <option>Theme Support</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="form-text">Your Message</label>
+            <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message..." required></textarea>
+          </div>
+          <div class="form--success">We received your submission, thank you!</div>
+          <div class="form--error">An error occurred please try again later.</div>
+          <div class="form__group">
+            <button class="btn btn-contact" type="submit">Send Message</button>
+          </div>
+          <!-- <input type="hidden" name="_next" value="{{ site.baseurl }}/contact/thanks/" /> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

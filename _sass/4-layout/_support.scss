@@ -1,22 +1,18 @@
 /* Support */
-.support {
-  background-color: #fff;
-}
 .support__content {
-  width: 100%;
-  padding: 30px 0;
-  margin: 0 auto;
+  margin: 20px 0 100px;
   text-align: center;
 
   .support__title {
-    margin: 10px 0;
-    font-size: 27px;
-    line-height: 47px;
+    margin: 0 0 15px;
+    font-family: 'Prata', serif;
+    font-size: 47px;
+    line-height: 67px;
   }
 
   .support__subtitle {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 16px;
     color: #2f4c54;
   }
 
@@ -26,30 +22,24 @@
   }
 
   .email__link {
-    margin-left: 10px;
     display: inline-block;
     font-size: 12px;
     font-weight: 700;
-    padding: 10px 30px;
+    padding: 18px 36px;
     text-transform: uppercase;
-    border-radius: 5px;
-    color: #fff;
+    border-radius: 3px;
+    color: $white;
     background-color: $brand-color;
     &:hover {
-      background-color: darken($brand-color, 10%);
+      transform: translate(0px, -5px);
+      box-shadow: 0 20px 30px -11px rgba(54,113,173,0.9)
     }
   }
 
-  @media only screen and (max-width: $tablet) {
-    .email__link {
-      margin: 15px 0 0;
-    }
-  }
-  
+
 
   @media only screen and (max-width: $mobile) {
     .support__title {
-      margin: 0 0 15px;
       font-size: 27px;
       line-height: 37px;
     }

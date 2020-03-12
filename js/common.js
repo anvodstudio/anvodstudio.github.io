@@ -1,9 +1,9 @@
 $(function() {
   'use strict';
 
-var  headerContent = $('.header__content'),
-     menuIcon = $('.menu-icon'),
-     menuOverlay = $('.menu-overlay');
+  var  headerContent = $('.header__content'),
+      menuIcon = $('.menu-icon'),
+      menuOverlay = $('.menu-overlay');
 
 
   /* =======================
@@ -31,30 +31,28 @@ var  headerContent = $('.header__content'),
   })
 
 
-  /* =================================
-  // Smooth scroll to the pages block
-  ================================= */
-  $(function($) {
-    $('a[href*="#"]:not([href="#"])').click(function(e) {
-       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-
-        if ($(window).width() <= 576) {
-           menuIcon.removeClass('open')
-           headerContent.removeClass('is-active');
-           menuOverlay.removeClass('is-visible');
-        };
-
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-        if (target.length) {
-          $('html,body').stop().animate({
-            scrollTop: target.offset().top - 30
-          }, 500);
-        }
-
+  /* =======================
+  // Ajax Form
+  ======================= */
+  $("#ajaxForm").submit(function (e) {
+    e.preventDefault();
+    var action = $(this).attr("action");
+    $.ajax({
+      type: "POST",
+      url: action,
+      crossDomain: true,
+      data: new FormData(this),
+      dataType: "json",
+      contentType: "multipart/form-data",
+      processData: false,
+      contentType: false,
+      headers: {
+        "Accept": "application/json"
       }
+    }).done(function () {
+      $('.form--success').addClass('is-active');
+    }).fail(function () {
+      $('.form--error').addClass('is-active');
     });
   });
 

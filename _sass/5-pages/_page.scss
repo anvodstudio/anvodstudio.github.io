@@ -1,4 +1,14 @@
-.page-title {
-  margin: 0 0 20px;
+/* Page */
+.page-head {
+  padding: 100px 0;
   text-align: center;
+  @media only screen and (max-width: $mobile) {
+    padding: 80px 0;
+  }
+}
+
+.page-title {
+  font-family: 'Prata', serif;
+  font-size: 43px;
+  margin: 0 0 5px;
 }

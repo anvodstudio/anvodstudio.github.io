@@ -1,28 +1,31 @@
 /* Features */
 .features {
-  padding: 80px 0;
-  background-color: #f7f7f7;
+  margin-bottom: 80px;
   .col {
     display: flex;
   }
 }
 
+.features__header {
+  margin-bottom: 50px;
+  text-align: center;
+  h2 {
+    margin: 0;
+  }
+}
+
 .features__item {
-  padding: 50px;
+  padding: 10%;
   margin-bottom: 30px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 25px rgba(51, 84, 78, 0.15);
-  background-color: #fff;
+  border: 1px solid $light-gray;
   @media only screen and (max-width: $mobile) {
-    padding: 40px;
     margin-bottom: 20px;
-    font-size: 14px;
   }
 }
 
 .features__img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .features__title {
@@ -32,6 +35,7 @@
 }
 
 .features__desc {
-  color: $gray;
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
 }

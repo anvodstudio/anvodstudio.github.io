@@ -1,5 +1,5 @@
 $columns: 12;
-$container-base-width: 1170px;
+$container-base-width: 1370px;
 $container-offset: $base-spacing-unit;
 
 
@@ -15,19 +15,7 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
   padding-right: $container-offset;
   margin: 0 auto;
 
-  @media only screen and (max-width: $mobile) {
-    padding-left: $container-offset * 2;
-    padding-right: $container-offset * 2;
-  }
-}
-
-.container-full {
-  max-width: 100%;
-  padding-left: $container-offset;
-  padding-right: $container-offset;
-  margin: 0 auto;
-
-  @media only screen and (max-width: $mobile) {
+  @media only screen and (max-width: $tablet) {
     padding-left: $container-offset * 2;
     padding-right: $container-offset * 2;
   }
@@ -41,21 +29,11 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
   box-sizing: border-box;
   margin-left: ($base-spacing-unit * -1);
   margin-right: ($base-spacing-unit * -1);
-
-  @media only screen and (max-width: $mobile) {
-    margin-left: ($base-spacing-unit * -2);
-    margin-right: ($base-spacing-unit * -2);
-  }
 }
 
 .col {
   padding-left: $base-spacing-unit;
   padding-right: $base-spacing-unit;
-  
-  @media only screen and (max-width: $mobile) {
-    padding-left: $container-offset * 2;
-    padding-right: $container-offset * 2;
-  }
 }
 
 [class^="col-"] {
@@ -136,7 +114,7 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
       .col-m-#{$i} {
         width: percentage( $i / $columns );
       }
-    }  
+    }
 
     @for $i from 0 through $columns {
       .push-m-#{$i} {

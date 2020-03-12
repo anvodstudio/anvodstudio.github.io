@@ -1,37 +1,53 @@
-title: Ghost CMS | Jekyll Themes Development – Anvod Studio.
-logo:
-description: Anvod Studio creates modern, minimal Ghost & Jekyll themes focused on the content, speed and simplicity.
+#-------------------------------
+# General Site Settings
+title: Anvod Studio - Premium Themes for Ghost CMS and Jekyll.
+logo: /img/logo.svg
+description: Anvod Studio creates modern, minimal premium themes for Ghost CMS & Jekyll focused on the content, speed, and simplicity.
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-# Author Settings
-author: Anvod Studio
+#-------------------------------
+# Navigation Settings
+menu:
+- {name: Ghost Themes, link: '/ghost-themes/'}
+- {name: Jekyll Themes, link: '/jekyll-themes/'}
+- {name: Contact, link: '/contact/'}
 
+
+#-------------------------------
 # Hero Settings
-hero-title: Welcome to Anvod Studio
-hero-subtitle: We create premium Ghost & Jekyll themes for creative people that appreciate quality and simplicity.
-hero-img: /img/hero_bg.jpg
+hero-title: Premium Ghost and Jekyll Themes
+hero-subtitle: We craft premium Ghost & Jekyll themes for creative people that appreciate quality and simplicity.
+# hero-img: /img/hero_bg.jpg
 
-# Contact links
+
+#-------------------------------
+# Contact Links
 twitter: https://twitter.com/anvodstudio
 github: https://github.com/anvodstudio
 email: anvodstudio@gmail.com
 
+
+#-------------------------------
 # Google Analytics
 google-analytics: # Add your identifier.
 
+
+#-------------------------------
 # Collestions
 collections:
   posts:
-    output: true
+    output: false
     permalink: /blog/:title
-  
+
   ghost-themes:
     output: false
 
   jekyll-themes:
     output: false
 
+
+#-------------------------------
 # Build settings
 markdown: kramdown
 permalink: pretty
@@ -41,6 +57,8 @@ plugins:
 sass:
   sass_dir: _sass
   style: compressed
+
+include: [_pages]
 
 exclude:
   - sass
