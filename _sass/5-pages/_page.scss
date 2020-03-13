@@ -3,7 +3,7 @@
   padding: 100px 0;
   text-align: center;
   @media only screen and (max-width: $mobile) {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 }
 
@@ -11,4 +11,8 @@
   font-family: 'Prata', serif;
   font-size: 43px;
   margin: 0 0 5px;
+  @media only screen and (max-width: $mobile) {
+    font-size: 33px;
+    line-height: 43px;
+  }
 }

@@ -2,7 +2,7 @@
 .hero {
   padding: 120px 0;
   @media only screen and (max-width: $mobile) {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 }
 
@@ -43,8 +43,8 @@
   @media only screen and (max-width: $mobile) {
     .hero__title {
       margin: 0 0 15px;
-      font-size: 40px;
-      line-height: 55px;
+      font-size: 33px;
+      line-height: 43px;
     }
 
     .hero__subtitle {

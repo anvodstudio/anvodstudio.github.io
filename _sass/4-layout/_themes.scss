@@ -8,6 +8,10 @@
   padding-bottom: 55px;
   margin-bottom: 80px;
   border-bottom: 1px solid $light-gray;
+  @media only screen and (max-width: $mobile) {
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
 }
 
 .theme-image {
