@@ -1,13 +1,16 @@
 /* Footer */
+.footer {
+  background-color: #f0f3fc;
+}
+
 .copyright {
-  padding: 40px 0;
+  padding: 50px 0;
   font-size: 13px;
   text-align: center;
-  border-top: 1px solid $light-gray;
   a {
     color: inherit;
     &:hover {
-      text-decoration: underline;
+      color: $brand-color;
     }
   }
 }
