@@ -131,12 +131,11 @@
   left: 0;
   transform: rotate(0deg);
   display: block;
-  height: 2px;
+  height: 3px;
   width: 100%;
   opacity: 1;
   transition: 0.25s ease-in-out;
   background: $black;
-  border-radius: 9px;
 }
 
 .menu-icon span:nth-child(1) {
